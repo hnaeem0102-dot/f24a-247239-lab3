@@ -24,3 +24,16 @@ function getLargest(list) {
 }
 
 console.log(getLargest(numbers));
+function countBiggerThanFirst(list) {
+  let count = 0;
+
+  for (let i = 1; i < list.length; i++) {
+    if (list[i] > list[0]) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countBiggerThanFirst(numbers));
