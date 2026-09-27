@@ -11,3 +11,16 @@ function getTotal(list) {
 }
 
 console.log(getTotal(numbers));
+function getLargest(list) {
+  let largest = list[0];
+
+  for (let number of list) {
+    if (number > largest) {
+      largest = number;
+    }
+  }
+
+  return largest;
+}
+
+console.log(getLargest(numbers));
