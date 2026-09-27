@@ -37,3 +37,8 @@ function countBiggerThanFirst(list) {
 }
 
 console.log(countBiggerThanFirst(numbers));
+document.getElementById("show").addEventListener("click", function () {
+  document.getElementById("total").textContent = getTotal(numbers);
+  document.getElementById("big").textContent = getLargest(numbers);
+  document.getElementById("above").textContent = countBiggerThanFirst(numbers);
+});
